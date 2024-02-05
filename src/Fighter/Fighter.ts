@@ -6,7 +6,7 @@ interface Fighter {
     strength: number,
     defense: number,
     energy?: Energy,
-    attack(enemy: Fighter) : void,
+    attack(enemy: Fighter | SimpleFighter) : void,
     special?(enemy: Fighter | SimpleFighter) : void,
     levelUp() : void,
     receiveDamage(attackPoints: number) : number,
